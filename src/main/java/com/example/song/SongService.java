@@ -82,7 +82,7 @@ public class SongService implements SongRepository {
             existingSong.setMusicDirector(song.getMusicDirector());
         }
 
-        playlist.put(songId,song);
+        playlist.put(songId,existingSong);
         return existingSong;
     }
 
